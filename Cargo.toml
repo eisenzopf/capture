@@ -1,8 +1,30 @@
 [package]
 name = "capture"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
+build = "build.rs"
+
+[package.metadata.bundle]
+name = "Audio Capture"
+identifier = "com.yourdomain.audiocapture"
+icon = ["icons/AppIcon.icns"]
+version = "1.0.0"
+copyright = "Copyright (c) 2024 Your Name"
+category = "public.app-category.utilities"
+short_description = "Audio recording utility"
+osx_minimum_system_version = "10.13"
+osx_entitlements_file = "entitlements.plist"
+frameworks = ["AVFoundation"]
 
 [dependencies]
 cpal = "0.15"
 hound = "3.5"
+cocoa = "0.25"
+chrono = "0.4"
+core-foundation = "0.9"
+block = "0.1"
+num-traits = "0.2"
+objc = { version = "0.2", features = ["exception"] }
+
+[build-dependencies]
+cargo-bundle = "0.6"
