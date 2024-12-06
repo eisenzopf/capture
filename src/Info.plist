@@ -22,9 +22,7 @@
     <true/>
     <key>NSMicrophoneUsageDescription</key>
     <string>This app needs access to the microphone to record audio.</string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>This app needs access to the microphone to record audio.</string>
-    <key>com.apple.security.device.audio-input</key>
+    <key>LSUIElement</key>
     <true/>
 </dict>
 </plist>
